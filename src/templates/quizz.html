@@ -1,0 +1,106 @@
+<div class="app-body ">
+  <div class="app-content">
+    <div class="blue">
+      <h1 class="title">Question {{questionNumber}}</h1>
+    </div>
+    <div class="container">
+      <h4 class="col-xs-12 question">
+        {{quizzJson.question}}
+      </h4>
+    </div>
+
+    <div ng-if="questionNumber !== 2" class="">
+      <div class="lightOrange thinBanner"></div>
+      <img ng-show="!hideQuestion" class="questionImage fadeIn" onload="this.style.opacity='1';" ng-src="images/{{quizzJson.image}}" alt="" />
+      <div ng-show="!hideQuestion" class="lightOrange thinBanner"></div>
+      <div class="answers quizzAnswers">
+         <div ng-repeat="response in quizzJson.responses" class="quizzAnswer container-fluid">
+           <div class="col-xs-2">
+           </div>
+           <div class="col-xs-10">
+             <div ng-hide="hideQuestion">
+               <div class="flex">
+                 <div class="">
+                   <input class="" type="checkBox" name="" value="oui" ng-model="response.user" ng-attr-id="{{response.name}}">
+                 </div>
+                 <div class="">
+                   <label class="quizzLabel" for="{{response.name}}">{{response.name}}</label>
+                 </div>
+             </div>
+             </div>
+             <div class="ng-hide {{response.result}}" ng-show="hideQuestion">
+               <div class="flex">
+                 <div class="">
+                   <input disabled type="checkBox" name="" value="oui" ng-checked="response.answer" ng-attr-id="a{{response.name}}">
+                 </div>
+                 <div class="">
+                   <label class="quizzLabel" for="a{{response.name}}">{{response.name}}</label>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+<div class="" ng-if="questionNumber === 2" >
+  <div ng-show="hideQuestion" class="lightOrange thinBanner"></div>
+    <div ng-repeat="index in [0,1,2,3]" class="">
+      <div ng-show="!hideQuestion" class="lightOrange thinBanner">  </div>
+      <img ng-show="!hideQuestion" class="questionImage fadeIn" onload="this.style.opacity='1';" ng-src="images/{{quizzJson.images[index]}}" alt="" />
+      <div ng-show="!hideQuestion" class="lightOrange thinBanner"></div>
+      <div class="answers">
+         <div class="container-fluid">
+           <div class="col-xs-2">
+           </div>
+           <div class="col-xs-10">
+             <div ng-show="!hideQuestion">
+               <div class="flex">
+                 <div class="">
+                   <input class="" type="checkBox" ng-name="Q2P{{index}}" ng-attr-id="Q2P{{index}}" value="oui" ng-model="quizzJson.responses[index].user">
+                 </div>
+                 <div class="">
+                   <label class="quizzLabel" for="Q2P{{index}}">{{quizzJson.responses[index].name}}</label>
+                 </div>
+               </div>
+             </div>
+             <div ng-show="hideQuestion">
+               <div class="flex">
+                 <div class="">
+                   <input disabled type="checkBox" ng-name="" ng-checked="true" ng-attr-id="aQ2P{{index}}">
+                 </div>
+               <div class="{{quizzJson.responses[index].result}}">
+                 <label class="quizzLabel" for="aQ2P{{index}}">{{quizzJson.responses[index].name}}</label>
+               </div>
+              </div>
+            </div>
+           </div>
+        </div>
+     </div>
+   </div>
+ </div>
+
+    <div ng-show="hideQuestion" class="ng-hide">
+        <div class="lightOrange thinBanner"></div>
+      <div class="container">
+        <div class="blue col-xs-12" style="height: 10px; margin-bottom: 10px;">
+        </div>
+      </div>
+      <div class="container justify" style="margin-bottom: 20px;">
+        <div class="col-xs-12">
+          {{quizzJson.fullAnswer}}
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="navbar navbar-absolute-bottom orange bottomBtnShadow">
+  <div class="btn-group justified">
+    <a ng-href="#{{previousLink}}" class="btn btn-navbar bottomBtn directions"><i class="fa fa-angle-left"></i> Retour</a>
+    <a ng-href="" class="btn btn-navbar bottomBtn" ng-click="checkAnswers()" ng-show="!nextQuestion"> Valider </a>
+    <a href="#{{nextLink}}" class="btn btn-navbar bottomBtn directions  ng-hide" ng-show="nextQuestion"> Suivant <i class="fa fa-angle-right"></i></a>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+[
+  {
+    "questionNumber": 1,
+    "images" : ["question1aSmall.jpg","question1bSmall.jpg","question1cSmall.jpg","question1dSmall.jpg"],
+    "question" : "Lesquels selon vous, sont des réalisations d’Habitat et Humanisme ? ",
+    "responses" : [{
+      "name" : "Cour des Voraces (Lyon 1)",
+      "answer" : true,
+      "user" : false,
+      "result" : ""
+    },
+    {
+      "name" : "Passerelle (containers)",
+      "answer" : true,
+      "user" : false,
+      "result" : ""
+    },
+    {
+      "name" : "Chorus (colocation intergénérationnel Lyon 7)",
+      "answer" : true,
+      "user" : false,
+      "result" : ""
+    },
+    {
+      "name" : "Maison des 2 Rives – Confluence (Lyon 2)",
+      "answer" : true,
+      "user" : false,
+      "result" : ""
+    }
+  ],
+    "fullAnswer" : " Comme vous pouvez le voir, les projets Habitat et Humanisme sont des projets innovants (containers recyclés, résidences intergénérationnelles) loin de l’idée que l’on peut se faire du logement social​."
+  },
+  {
+    "questionNumber": 2,
+    "image" : "question2Small.jpg",
+    "question" : "Selon vous, qui (quel profil de personne) est touché en priorité par le mal-logement ?",
+    "responses" : [
+      {
+        "name" : "Chômeurs",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Femmes seules ou avec enfant",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Retraités pauvres",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Sans Domicile Fixe",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Jeunes",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Réfugiés",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      }
+    ],
+    "fullAnswer" : "Selon le rapport 2015 de la Fondation Abbé Pierre, sur 3,5 millions de mal-logés, les SDF représentent 141 500 personnes et les réfugiés 30 000 personnes. La très grande majorité des personnes mal-logées sont des femmes seules, des jeunes travailleurs, des familles, des étudiants, chômeurs et retraités."
+  },
+  {
+    "questionNumber": 3,
+    "image" : "question3Small.jpg",
+    "question" : "Dans quel arrondissement de Lyon ou commune, Habitat et Humanisme Rhône propose-t-elle le plus de logements ?",
+    "responses" : [
+      {
+        "name" : "Communes de l’Est lyonnais",
+        "answer" : false,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Presqu’île",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "  Ouest Lyonnais",
+        "answer" : false,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Zones d'habitations prioritaires",
+        "answer" : false,
+        "user" : false,
+        "result" : ""
+      }
+    ],
+    "fullAnswer" : "Habitat est Humanisme met la mixité sociale au cœur de son action en favorisant l’accès aux villes aux personnes en difficulté. Sur près de 1600 logements dans le Rhône, plus de 1000 logements sont implantés à travers les 9 arrondissements de la ville de Lyon dont 259 dans le 7eme arrondissement et 219 dans le 2eme arrondissement​"
+  },
+  {
+    "questionNumber": 4,
+    "image" : "question4Small.jpg",
+    "question" : "Quelles sont les valeurs défendues par Habitat et Humanisme ? ",
+    "responses" : [
+      {
+        "name" : "Bâtisseur de Lien / intergénérationnel / accompagnement",
+        "answer" : true,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Liberté / égalité / fraternité",
+        "answer" : false,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "Yes We can",
+        "answer" : false,
+        "user" : false,
+        "result" : ""
+      },
+      {
+        "name" : "L’important c’est de participer",
+        "answer" : false,
+        "user" : false,
+        "result" : ""
+      }
+    ],
+    "fullAnswer" : "Les bénévoles et les salariés signent une charte portant des valeurs fortes à savoir la primauté de la personne et le changement de regard sur l’autre."
+  }
+]

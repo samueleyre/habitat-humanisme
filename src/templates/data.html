@@ -1,0 +1,200 @@
+
+<div ng-show="showPopUp">
+<div class="popup filter">
+</div>
+  <div class="container">
+    <div class="col-xs-12">
+      <div class="popup window">
+        <div class="blue borderTop">
+          <h1 class="title">Confirmation</h1>
+        </div>
+        <div class="container" style="margin-top: 22px;">
+          <div class="col-xs-12">
+            <h4>Envoyer les données ?</h4>
+          </div>
+        </div>
+        <div class="container-fluid" style="text-align: center; margin: 22px 0px 0px;">
+          <div class="col-xs-6">
+            <a style="width: 70px;" class="btn btn-lg lighterOrange whiteFont" href="" ng-click="cancel()" >NON</a>
+          </div>
+          <div class="col-xs-6">
+            <a style="width: 70px;" class="btn btn-lg orange whiteFont" href="#/" ng-click="getData()" >OUI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- App Body -->
+<div class="app-body" >
+  <div class="app-content">
+    <div class="blue">
+      <h1 class="title">Coordonnées</h1>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 firstFormInput form-group">
+        <input class="form-control veryLightGrey" type="text" name="name" value="" autocomplete="off" autocorrect="off" placeholder="Nom" ng-model="data.name">
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <input class="form-control veryLightGrey" type="text" name="surname" value="" autocomplete="off" autocorrect="off" placeholder="Prenom" ng-model="data.surname">
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <input class="form-control veryLightGrey" type="text" name="email" value="" autocomplete="off" autocorrect="off" placeholder="Email" ng-model="data.email">
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <input class="form-control veryLightGrey" type="text" name="address" value="" autocomplete="off" autocorrect="off" placeholder="Adresse (N°, rue)" ng-model="data.adress">
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <input class="form-control veryLightGrey" type="text" name="zipcode" value="" autocomplete="off" autocorrect="off" placeholder="Code Postal" ng-model="data.zipCode" max="99999">
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <input class="form-control veryLightGrey" type="text" name="city" value="" autocomplete="off" autocorrect="off" placeholder="Ville" ng-model="data.city">
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <select class="form-control" name="age" ng-model="data.gender">
+          <option disabled selected value value="unknown">Genre</option>
+          <option value="female">Feminin</option>
+          <option value="male">Masculin</option>
+        </select>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+    <div class="container">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8 form-group">
+        <select class="lastFormInput form-control" name="age" ng-model="data.age">
+          <option disabled selected value value="0">Tranche d'âge</option>
+          <option value="18-25">18 - 25 ans</option>
+          <option value="26-35">25 - 35 ans</option>
+          <option value="36-45">35 - 45 ans</option>
+          <option value="46-60">45 - 60 ans</option>
+          <option value="+61">+ 60 ans</option>
+        </select>
+      </div>
+      <div class="col-xs-2"></div>
+  </div>
+  <div class="blue">
+    <h1 class="title">Dons</h1>
+  </div>
+  <div class="container">
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-11" >
+      <h5 class="orangeFont left" >Actif</h5>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-3" style="padding: 2px default">
+      <div class="flex">
+        <div class="">
+          <input type="radio" name="name" value="yes" id="yesDonnator" ng-model="data.activity">
+        </div>
+        <div class="">
+          <label for="yesDonnator" class="radioText"> Oui </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2" style="padding: 2px default">
+      <div class="flex">
+        <div class="">
+          <input class="" type="radio" name="name" value="no" id="noDonnator" ng-model="data.activity">
+        </div>
+        <div class="">
+          <label for="noDonnator" class="radioText"> Non </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-5"></div>
+  </div>
+  <div class="container">
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-11">
+      <h5 class="orangeFont left">Donnateur</h5>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-xs-2">
+    </div>
+    <div class="col-xs-10">
+      <div class="flex">
+        <div class="">
+          <input type="radio" name="donator" id="alreadyDonator" value="donator" ng-model="data.donator">
+        </div>
+        <div class="radioText">
+          <label for="alreadyDonator" > Déjà donnateur chez H&H. </label>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-10">
+      <div class="flex">
+        <div class="">
+          <input type="radio" name="donator" id="notDonator" value="no" ng-model="data.donator">
+        </div>
+        <div class="radioText">
+          <label for="notDonator"> Ne souhaites pas. </label>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-10">
+      <div class="flex">
+        <div class="">
+          <input type="radio" name="donator" value="donated" id="donation" ng-model="data.donator" ng-click="focusInput = true;">
+        </div>
+        <div class="">
+          <label for="donation" class="radioText" style="width: 100%"> Montant :</label>
+        </div>
+          <div class="" style="padding: 0px 0px 0 9px">
+            <input focus-me="focusInput" class="form-control input-sm" type="number" step="any" name="name" value="0" autocomplete="off" autocorrect="off" ng-model="data.amount" max="200" style=" width: 48px;">
+          </div>
+        <div class="radioText">
+          <p>  euros </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="navbar navbar-absolute-bottom orange bottomBtnShadow">
+  <div class="btn-group justified">
+    <a ng-href="#5" class="btn btn-navbar bottomBtn directions"><i class="fa fa-angle-left"></i> Retour</a>
+    <a ng-href="" class="btn btn-navbar bottomBtn" ng-click="showModal()" > Valider</a>
+  </div>
+</div>

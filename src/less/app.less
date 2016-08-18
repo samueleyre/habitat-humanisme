@@ -1,0 +1,327 @@
+@import "mobile-angular-ui/src/less/mobile-angular-ui-base.less";
+@import "mixins.less";
+@import "variables.less";
+
+
+@orange : rgba(236,116,33,255);
+@lightOrange : rgba(251, 220, 198, 255);
+@lighterOrange : rgba(255, 172, 113, 255);
+@veryLightOrange : rgba(261, 230, 208, 255);
+@blue : rgba(0,163,231,255);
+@darkGrey : rgba(100,100,100,255);
+@veryLightGrey : rgba(250,250,250,255);
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    @shadow;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         @shadow;   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+// main
+
+body{
+  font-family: arial;
+}
+
+input.ng-invalid{
+    border-color: @orange;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 0px 0 0;
+}
+
+p{
+  font-family: arial;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: eurostile;
+}
+
+a{
+  font-family: eurostile;
+}
+
+
+.navbar{
+  border: none;
+  min-height: 51px;
+}
+
+.navbar-absolute-top{
+  position: relative;
+}
+
+.navbar-logo{
+  position: relative;
+  padding: 10px 21px;
+}
+
+.navbar-logo-left{
+  text-align: left;
+}
+
+.navbar-logo-right{
+  text-align: right;
+}
+
+.title{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 12px 0;
+  font-family: eurostile;
+}
+
+.blue{
+  background-color: @blue;
+}
+
+.lightOrange{
+  background-color: @lightOrange;
+}
+
+.veryLightOrange{
+  background-color: @veryLightOrange;
+}
+
+.lighterOrange{
+  background-color: @lighterOrange;
+}
+
+.orange{
+  background-color: @orange;
+}
+
+.lightGrey{
+    background-color: rgba(240,240,240,255);
+}
+
+.veryLightGrey{
+  background-color: rgba(250,250,250,255);
+}
+
+.whiteFont{
+  color: white;
+  font-family: eurostile;
+}
+
+.flex{
+  display: flex;
+  display: -webkit-flex; /* Safari */
+}
+.normalBtn, .bottomBtn{
+  color: white;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.bottomBtnShadow{
+  .box-shadow( 0px 2px 6px 1px #000000);
+}
+
+.btnShadow{
+  .box-shadow( 0px -0.5px 2px 0px grey );
+}
+
+.topShadow{
+  .box-shadow(  0px -1px 5.25px -2px darkgrey );
+}
+
+.botShadow{
+  .box-shadow(  0px 1px 5.25px -2px darkgrey );
+  // .box-shadow(  7px 8.5px 9px 5.2px darkgrey );
+}
+
+.inline{
+  display: inline-block;
+}
+
+.normalBtnMargin{
+    margin: 50px 0px 12px;
+}
+
+
+.directions{
+  font-size: 18px;
+}
+
+.questionImage{
+  width: 100%;
+}
+
+.center{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.fadeIn{
+  opacity:0;
+  -moz-transition: opacity 1s; /* Firefox 4 */
+  -webkit-transition: opacity 1s; /* Safari and Chrome */
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+//homePage
+
+.homeTitle{
+  height: 53px;
+  margin: 10px 0px 0;
+}
+
+.homeTitle > h4{
+  padding: 17px 0;
+  color: @darkGrey;
+}
+
+.logoContainer{
+  text-align: center;
+  padding: 42px 0px;
+}
+
+.scoresContainer{
+  padding: 20px 0;
+}
+
+
+.logoRow{
+  margin: 70px 0 20px;
+}
+
+.logoImg{
+  align-self: baseline;
+}
+
+.flexJustify{
+  justify-content: space-around;
+}
+
+// quizz
+
+.question{
+  text-align: center;
+  padding: 20px 0px;
+  line-height: 24px;
+  font-family: eurostileb;
+  font-weight: bold;
+}
+
+.answers{
+  padding: 23px 0 23px;
+}
+
+.quizzAnswers{
+  padding: 30px 0 30px;
+}
+
+
+.quizzAnswer{
+  padding: 2px 0;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}
+
+.thinBanner{
+  width: 100%;
+  padding: 3px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.veryLightGrey{
+  background-color: @veryLightGrey;
+}
+
+.quizzLabel{
+  padding-left: 8px;
+  margin-bottom: 0;
+}
+
+.subBanner{
+  padding: 0px 0;
+}
+
+// Data
+
+.form-control {
+    border-radius: 1px;
+  }
+
+  .dataInputs{
+  }
+
+.orangeFont{
+  font-weight: bold;
+  color: @orange;
+  font-size: 25px;
+  margin: 20px 0 20px;
+}
+
+.firstFormInput{
+  margin: 20px 0 0;
+}
+
+.lastFormInput{
+  margin: 0 0 20px;
+}
+
+.radioText{
+  margin: 0px 10px 10px;
+}
+
+.popup{
+  position : fixed;
+  z-index: 1099;
+  background-color: white;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.window{
+  background-color: @veryLightOrange;
+  height: 200px;
+  top: 253px;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.borderTop{
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.filter{
+  background-color: white;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  z-index: 1098;
+}
+
+//login
+
+.inputLogin{
+  padding: 20px 0;
+}
+
+.btnLogin{
+  padding: 20px 0;
+}
