@@ -1,4 +1,5 @@
 @import "mobile-angular-ui/src/less/mobile-angular-ui-base.less";
+@import "fonts.less";
 @import "mixins.less";
 @import "variables.less";
 
@@ -21,7 +22,7 @@
 // main
 
 body{
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
 input.ng-invalid{
@@ -72,7 +73,7 @@ a{
   color: white;
   font-size: 24px;
   padding: 12px 0;
-  font-family: eurostile;
+  font-family: eurostileb;
 }
 
 .blue{
@@ -96,7 +97,7 @@ a{
 }
 
 .lightGrey{
-    background-color: rgba(240,240,240,255);
+  background-color: rgba(240,240,240,255);
 }
 
 .veryLightGrey{
@@ -106,6 +107,14 @@ a{
 .whiteFont{
   color: white;
   font-family: eurostile;
+}
+
+.orangeFont{
+  color: @orange;
+}
+
+.blueFont{
+  color: @blue;
 }
 
 .flex{
@@ -216,6 +225,7 @@ a{
   line-height: 24px;
   font-family: eurostileb;
   font-weight: bold;
+  color: #3C3C3C;
 }
 
 .answers{

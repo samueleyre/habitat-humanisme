@@ -2,7 +2,7 @@
   {
     "questionNumber": 1,
     "images" : ["question1aSmall.jpg","question1bSmall.jpg","question1cSmall.jpg","question1dSmall.jpg"],
-    "question" : "Lesquels selon vous, sont des réalisations d’Habitat et Humanisme ? ",
+    "question" : "Lesquelles selon vous, sont des réalisations d’Habitat et Humanisme ? ",
     "responses" : [{
       "name" : "Cour des Voraces (Lyon 1)",
       "answer" : true,
@@ -10,13 +10,13 @@
       "result" : ""
     },
     {
-      "name" : "Passerelle (containers)",
+      "name" : "Passerelle (containers, Lyon 7)",
       "answer" : true,
       "user" : false,
       "result" : ""
     },
     {
-      "name" : "Chorus (colocation intergénérationnel Lyon 7)",
+      "name" : "Chorus (colocation intergénérationnelle, Lyon 7)",
       "answer" : true,
       "user" : false,
       "result" : ""
@@ -33,7 +33,7 @@
   {
     "questionNumber": 2,
     "image" : "question2Small.jpg",
-    "question" : "Selon vous, qui (quel profil de personne) est touché en priorité par le mal-logement ?",
+    "question" : "Selon vous, qui (quel profil de personnes) est touché en priorité par le mal-logement ?",
     "responses" : [
       {
         "name" : "Chômeurs",
@@ -86,13 +86,13 @@
         "result" : ""
       },
       {
-        "name" : "Presqu’île",
+        "name" : "Lyon Intra muros",
         "answer" : true,
         "user" : false,
         "result" : ""
       },
       {
-        "name" : "  Ouest Lyonnais",
+        "name" : "Ouest Lyonnais",
         "answer" : false,
         "user" : false,
         "result" : ""

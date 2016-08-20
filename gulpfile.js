@@ -12,7 +12,7 @@ var config = {
   cordova: true,
   less: {
     src: [
-      './src/less/app.less', './src/less/responsive.less', './src/less/fonts.less'
+      './src/less/app.less', './src/less/responsive.less'
     ],
     paths: [
       './src/less', './bower_components'

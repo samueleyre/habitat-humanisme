@@ -19,7 +19,7 @@ angular.module('Subscription', [])
         SubscriptionService.GetSchools(function(response) {
           if (response.success) {
             $scope.schools = response.data.schools;
-            console.log($scope['schools']);
+            // console.log($scope['schools']);
           }
         });
     }]);

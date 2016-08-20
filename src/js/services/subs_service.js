@@ -14,7 +14,7 @@ angular.module('Subscription')
           }).join('&');
 
 
-              console.log(data + "sent to "+ $rootScope.serverUrl+"subscribe.php")
+              // console.log(data + "sent to "+ $rootScope.serverUrl+"subscribe.php")
 
                  $http({
                      method: 'POST',
@@ -22,7 +22,7 @@ angular.module('Subscription')
                      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                      data: data
                    }).then(function successCallback(response) {
-                     console.log(response)
+                    //  console.log(response)
                        callback(response.data);
                      }, function errorCallback(response) {
                      });
@@ -36,7 +36,7 @@ angular.module('Subscription')
           }).join('&');
 
 
-          console.log(data + "sent to "+ $rootScope.serverUrl+"schools.php")
+          // console.log(data + "sent to "+ $rootScope.serverUrl+"schools.php")
 
           $http({
               method: 'POST',
@@ -44,7 +44,7 @@ angular.module('Subscription')
               headers: {'Content-Type': 'application/x-www-form-urlencoded'},
               data: data
           }).then(function successCallback(response) {
-              console.log(response)
+              // console.log(response)
                 callback(response.data);
               }, function errorCallback(response) {
               });

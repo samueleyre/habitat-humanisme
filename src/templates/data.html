@@ -138,7 +138,7 @@
     <div class="col-xs-1">
     </div>
     <div class="col-xs-11">
-      <h5 class="orangeFont left">Donnateur</h5>
+      <h5 class="orangeFont left">Donateur</h5>
     </div>
   </div>
   <div class="container">
@@ -150,7 +150,7 @@
           <input type="radio" name="donator" id="alreadyDonator" value="donator" ng-model="data.donator">
         </div>
         <div class="radioText">
-          <label for="alreadyDonator" > Déjà donnateur chez H&H. </label>
+          <label for="alreadyDonator" > Déjà donateur chez H&H. </label>
         </div>
     </div>
     </div>
@@ -179,7 +179,7 @@
           <label for="donation" class="radioText" style="width: 100%"> Montant :</label>
         </div>
           <div class="" style="padding: 0px 0px 0 9px">
-            <input focus-me="focusInput" class="form-control input-sm" type="number" step="any" name="name" value="0" autocomplete="off" autocorrect="off" ng-model="data.amount" max="200" style=" width: 48px;">
+            <input focus-me="focusInput" class="form-control input-sm" type="number" step="any" name="name" value="0" ng-model="data.amount" max="200" style=" width: 48px;">
           </div>
         <div class="radioText">
           <p>  euros </p>
@@ -187,12 +187,20 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="col-xs-12">
+      <div style="padding: 30px 0">
+      </div>
+    </div>
+  </div>
+
 </div>
 </div>
 
 
 
-<div class="navbar navbar-absolute-bottom orange bottomBtnShadow">
+<div class="navbar navbar-fixed-bottom orange bottomBtnShadow">
   <div class="btn-group justified">
     <a ng-href="#5" class="btn btn-navbar bottomBtn directions"><i class="fa fa-angle-left"></i> Retour</a>
     <a ng-href="" class="btn btn-navbar bottomBtn" ng-click="showModal()" > Valider</a>

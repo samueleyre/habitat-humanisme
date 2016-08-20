@@ -15,8 +15,9 @@ angular.module('Quizz')
       };
 
       service.CheckAnswers = function(quizzJson, callback) {
+        // We don't verify the answers...
         for (var i = 0; i < quizzJson.responses.length; i++) {
-          if (quizzJson.responses[i].user.toString() === quizzJson.responses[i].answer.toString()) {
+          if (quizzJson.responses[i].answer) {
             quizzJson.responses[i].result = "green";
           }
           else {

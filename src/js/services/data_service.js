@@ -24,7 +24,7 @@ angular.module('Data')
             return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
           }).join('&');
 
-          console.log(data + "sent to "+ $rootScope.serverUrl+"data.php")
+          // console.log(data + "sent to "+ $rootScope.serverUrl+"data.php")
 
              $http({
                  method: 'POST',
@@ -32,7 +32,7 @@ angular.module('Data')
                  headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                  data: data
                }).then(function successCallback(response) {
-                 console.log(response)
+                //  console.log(response)
                    callback(response.data);
                  }, function errorCallback(response) {
                  });

@@ -15,7 +15,7 @@ angular.module('Authentication')
                 return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
               }).join('&');
 
-              console.log(data + "sent to "+ $rootScope.serverUrl+"confirm.php")
+              // console.log(data + "sent to "+ $rootScope.serverUrl+"confirm.php")
               // send code to back-office
               $http({
                 method: 'POST',
@@ -23,7 +23,7 @@ angular.module('Authentication')
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 data: data
               }).then(function successCallback(response) {
-                console.log("confirm response",response)
+                // console.log("confirm response",response)
                 callback(response.data);
               }, function errorCallback(response) {
               });
@@ -62,7 +62,7 @@ angular.module('Authentication')
 
             /* Use this for real authentication
              ----------------------------------------------*/
-             console.log(data + "sent to "+ $rootScope.serverUrl+"authenticate.php")
+            //  console.log(data + "sent to "+ $rootScope.serverUrl+"authenticate.php")
 
 
                 $http({
@@ -71,7 +71,7 @@ angular.module('Authentication')
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                     data: data
                   }).then(function successCallback(response) {
-                    console.log(response)
+                    // console.log(response)
                       callback(response.data);
                     }, function errorCallback(response) {
                     });

@@ -5,6 +5,7 @@
 angular.module('MyApp', [
   'Authentication',
   'Subscription',
+  'Recuperation',
   'Home',
   'PreliminaryQuestion',
   'Quizz',
@@ -26,6 +27,11 @@ angular.module('MyApp', [
         .when('/inscription', {
             controller: 'SubscriptionController',
             templateUrl: 'subscription.html',
+            reloadOnSearch: false
+        })
+        .when('/recuperation', {
+            controller: 'RecuperationController',
+            templateUrl: 'recuperation.html',
             reloadOnSearch: false
         })
         .when('/', {
@@ -68,6 +74,10 @@ angular.module('MyApp', [
           templateUrl:'data.html',
           reloadOnSearch: false})
 
+        .when('/mentionslegales', {
+          templateUrl:'mentionsLegales.html',
+          reloadOnSearch: false})
+
         .otherwise({ redirectTo: '/login' });
 }])
 
@@ -81,7 +91,7 @@ angular.module('MyApp', [
 
         $rootScope.$on('$locationChangeStart', function (event, next, current) {
             // redirect to login page if not logged in
-            if ($location.path() !== '/login' && !$rootScope.globals.currentUser && $location.path() !== '/inscription') {
+            if ($location.path() !== '/login' && !$rootScope.globals.currentUser && $location.path() !== '/inscription' && $location.path() !== '/recuperation') {
                 $location.path('/login');
             }
         });
@@ -90,14 +100,15 @@ angular.module('MyApp', [
         $rootScope.question = "unknown";
 
         //define url
-        // testing Amel
-        // $rootScope.serverUrl = "http://localhost:8888/";
 
         // local
         // $rootScope.serverUrl = "http://localhost/server-side/";
 
-        // real
+        // test
         $rootScope.serverUrl = "http://www.samueleyre.com/work/habethu/server/";
+
+        // real
+        // $rootScope.serverUrl = "http://www.uneclepourlesmalloges.com/server/";
 
 
 

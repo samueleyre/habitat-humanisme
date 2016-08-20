@@ -1,32 +1,23 @@
 
 <div class="blue">
-  <h1 class="title">Connexion</h1>
-
+  <h1 class="title">Recupération</h1>
 </div>
 
 <div class="logoContainer">
   <img src="images/heth_logo.svg" alt="" width="250px;" />
 </div>
 
-<div ng-show="error" class="alert alert-danger">{{error}}</div>
 <div ng-show="message_confirmation" class="alert alert-info">{{message_confirmation}}</div>
 
-<form name="form" ng-submit="login()" role="form" id="loginForm">
+<form name="form" ng-submit="recuperatePwd()" ng-show="!hideEmailInput" role="form" id="loginForm">
       <div class="container">
         <div class="col-xs-12 center inputLogin ">
         <label for="email">Email</label>
-        <input type="text" name="email" id="email" class="form-control lightGrey" autocorrect="off" ng-model="email" required />
+        <input type="text" name="email" id="email" class="form-control lightGrey" autocorrect="off" ng-model="recupe_email" required />
         <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required</span>
         </div>
       </div>
-      <div class="container">
-        <div class="col-xs-12 center inputLogin">
-          <label for="password">Mot de Passe</label>
-          <i class="fa fa-lock"></i>
-          <input type="password" name="password" id="password" class="form-control lightGrey" ng-model="password" required />
-          <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
-        </div>
-      </div>
+
       <div class="container">
         <div class="col-xs-12 center">
           <button class="btn btn-lg orange whiteFont" type="submit" ng-disabled="form.$invalid || dataLoading" >Envoyer</button>
@@ -35,15 +26,8 @@
       </div>
 </form>
 
-<div class="col-xs-12 center" style="margin: 14px 0px 14px;">
-  <a class="" style="font-size: 19px;" href="#inscription" >Inscription</a>
-</div>
-<div class="col-xs-12 center" style="margin: 14px 0px 20px;">
-  <a class="" style="font-size: 16px; color: black;" href="#recuperation" >Mot de passe oublié ?</a>
-</div>
-<div class="container">
+<div class="container-fluid ng-hide" ng-show="hideEmailInput" style="text-align: center; margin: 30px 0;">
   <div class="col-xs-12">
-    <div style="padding: 30px 0">
-    </div>
+    <a class="btn btn-lg orange whiteFont" href="#login" >Retour</a>
   </div>
 </div>

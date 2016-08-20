@@ -12,7 +12,7 @@ angular.module('Home')
           }).join('&');
 
 
-              console.log(data + "sent to "+ $rootScope.serverUrl+"results.php")
+              // console.log(data + "sent to "+ $rootScope.serverUrl+"results.php")
 
                  $http({
                      method: 'POST',
@@ -20,7 +20,7 @@ angular.module('Home')
                      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                      data: data
                    }).then(function successCallback(response) {
-                     console.log(response)
+                    //  console.log(response)
                        callback(response.data);
                      }, function errorCallback(response) {
                      });
