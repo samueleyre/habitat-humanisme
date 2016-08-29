@@ -52,7 +52,7 @@ if(isset($_POST['email'])) {
        <p> Votre mot de passe : ".$student['mdp']." </p>
        </br>
        <p> Habitat et Humanisme </p>
-       <img src=\"http://www.samueleyre.com/work/habethu/apptest/images/house.png\">
+       <img src=\"http://www.uneclepourlesmalloges.com/images/house.png\">
        ";
 
        $m->AltBody = " Votre mot de passe :".$student['mdp'];

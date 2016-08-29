@@ -33,7 +33,7 @@
   {
     "questionNumber": 2,
     "image" : "question2Small.jpg",
-    "question" : "Selon vous, qui (quel profil de personnes) est touché en priorité par le mal-logement ?",
+    "question" : "Selon vous, qui (quel profil de personnes) est touché majoritairement le mal-logement ?",
     "responses" : [
       {
         "name" : "Chômeurs",
@@ -72,7 +72,7 @@
         "result" : ""
       }
     ],
-    "fullAnswer" : "Selon le rapport 2015 de la Fondation Abbé Pierre, sur 3,5 millions de mal-logés, les SDF représentent 141 500 personnes et les réfugiés 30 000 personnes. La très grande majorité des personnes mal-logées sont des femmes seules, des jeunes travailleurs, des familles, des étudiants, chômeurs et retraités."
+    "fullAnswer" : "Selon le rapport 2015 de la Fondation Abbé Pierre, parmiLa très grande majorité des personnes mal-logées sont des femmes seules, des jeunes travailleurs, des familles, des étudiants, chômeurs et retraités. Selon le rapport 2015 de la Fondation Abbé Pierre, parmi les 3,5 millions de mal-logés, les SDF représentent 141 500 personnes (4 %) et les réfugiés 30 000 personnes (0,8%)."
   },
   {
     "questionNumber": 3,
@@ -80,19 +80,13 @@
     "question" : "Dans quel arrondissement de Lyon ou commune, Habitat et Humanisme Rhône propose-t-elle le plus de logements ?",
     "responses" : [
       {
-        "name" : "Communes de l’Est lyonnais",
-        "answer" : false,
-        "user" : false,
-        "result" : ""
-      },
-      {
-        "name" : "Lyon Intra muros",
+        "name" : "Lyon intra-muros",
         "answer" : true,
         "user" : false,
         "result" : ""
       },
       {
-        "name" : "Ouest Lyonnais",
+        "name" : "Autres communes de la Métropole",
         "answer" : false,
         "user" : false,
         "result" : ""
@@ -119,19 +113,19 @@
       },
       {
         "name" : "Liberté / égalité / fraternité",
-        "answer" : false,
+        "answer" : true,
         "user" : false,
         "result" : ""
       },
       {
         "name" : "Yes We can",
-        "answer" : false,
+        "answer" : true,
         "user" : false,
         "result" : ""
       },
       {
         "name" : "L’important c’est de participer",
-        "answer" : false,
+        "answer" : true,
         "user" : false,
         "result" : ""
       }
