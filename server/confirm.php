@@ -60,15 +60,15 @@ if(isset($_POST['code'])) {
 
      <p> Un point important sur l'utilisation de l'application :  </p>
 
-     <p>  - Tous les champs de la page coordonn&eacute;es ne doivent pas obligatoirement &ecirc;tre remplis pour valider le questionnaire. </p>
+     <p>  - Le nom et le prénom sont obligatoires. Les autres champs sont facultatifs mais nous vous incitons fortement à obtenir une adresse mail ou une adresse postale. </p>
 
      <p> On vous invite &agrave; pr&eacute;sent &agrave; lire ci-dessous les r&egrave;gles du jeu en d&eacute;tail pour &ecirc;tre au top pendant la journ&eacute;e !  </p>
 
      <p> Bonne chance ! </p>
 
-     <p style=\"color: rgba(0,163,231,255);\"> L'équipe d'Habitat et Humanisme </p>
+     <p style=\"color: rgba(0,163,231,255);\"> L'&eacute;quipe d'Habitat & Humanisme </p>
 
-     <img src=\"http://www.samueleyre.com/work/habethu/apptest/images/house.png\">
+     <img src=\"http://www.uneclepourlesmalloges.com/images/house.png\">
      </br></br>
      <h2> Les r&egrave;gles du jeu :</h2>
      </br>
@@ -78,13 +78,13 @@ if(isset($_POST['code'])) {
 
      <p style=\"color: rgba(236,116,33,255);\"> Se pr&eacute;senter : </p>
 
-     <p style=\"color: rgba(0,163,231,255);\">&laquo;&#160;Bonjour, nous sommes &eacute;tudiants en 1&egrave;re ann&eacute;e de telle école et nous participons &agrave; l&rsquo;op&eacute;ration &laquo;&#160;une cl&eacute; pour les mal-log&eacute;s&#160;&raquo; de l&rsquo;association Habitat et Humanisme&#160;&raquo;. </p>
+     <p style=\"color: rgba(0,163,231,255);\">&laquo;&#160;Bonjour, nous sommes &eacute;tudiants en 1&egrave;re ann&eacute;e de telle &eacute;cole et nous participons &agrave; l&rsquo;op&eacute;ration &laquo;&#160;une cl&eacute; pour les mal-log&eacute;s&#160;&raquo; de l&rsquo;association Habitat & Humanisme&#160;&raquo;. </p>
 
      <p style=\"color: rgba(236,116,33,255);\"> Pr&eacute;senter rapidement l&rsquo;association et le quizz : </p>
-     <p style=\"color: rgba(0,163,231,255);\"> &laquo;&#160;Habitat et Humanisme lutte contre le mal logement en relogeant et en accompagnant des personnes en difficult&eacute;. Aussi, dans le but de sensibiliser le grand public &agrave; notre action et &agrave; la cause du mal-logement, nous vous proposons de participer gratuitement &agrave; un quizz tr&egrave;s simple et rapide. Suite &agrave; ce quizz, un tirage au sort avec de nombreux cadeaux &agrave; gagner aura lieu&#160;&raquo;.</p>
+     <p style=\"color: rgba(0,163,231,255);\"> &laquo;&#160;Habitat & Humanisme lutte contre le mal logement en relogeant et en accompagnant des personnes en difficult&eacute;. Aussi, dans le but de sensibiliser le grand public &agrave; notre action et &agrave; la cause du mal-logement, nous vous proposons de participer gratuitement &agrave; un quizz tr&egrave;s simple et rapide. Suite &agrave; ce quizz, un tirage au sort avec de nombreux cadeaux &agrave; gagner aura lieu&#160;&raquo;.</p>
 
      <p style=\"color: rgba(236,116,33,255);\"> Remise d&rsquo;un objet, du tract et demande de dons :  </p>
-     <p style=\"color: rgba(0,163,231,255);\">Pour vous remercier de votre participation vous nous remettons ce petit objet symbolique de l&rsquo;association ainsi que ce tract o&ugrave; vous retrouverez les coordonn&eacute;es de notre site internet et notre page Facebook &raquo;. &laquo; Souhaiteriez-vous faire un don symbolique pour Habitat et Humanisme ?</p>
+     <p style=\"color: rgba(0,163,231,255);\">Pour vous remercier de votre participation vous nous remettons ce petit objet symbolique de l&rsquo;association ainsi que ce tract o&ugrave; vous retrouverez les coordonn&eacute;es de notre site internet et notre page Facebook &raquo;. &laquo; Souhaiteriez-vous faire un don symbolique pour Habitat & Humanisme ?</p>
      <p style=\"color: rgba(236,116,33,255);\"> En cas de questions sur la destination des dons : </p>
 
      <p style=\"color: rgba(0,163,231,255);\">&laquo; Tous les dons sont utilis&eacute;s par HH pour l&rsquo;acquisition, la r&eacute;habilitation ou l&rsquo;&eacute;quipement de logements ainsi que pour les projets sociaux. Cette ann&eacute;e la collecte sera affect&eacute;e &agrave; la r&eacute;novation d&rsquo;un lieu d&rsquo;h&eacute;bergement pour femmes avec ou sans enfant : la Maison des Amies du Monde dans le 5&egrave;me arrondissement. &raquo;. Sachez qu&rsquo;avec 15 euros, vous financez une nuit pour des personnes sans logement.</p>
@@ -101,7 +101,7 @@ if(isset($_POST['code'])) {
 
      <p style=\"color: rgba(236,116,33,255); margin-left : 20px;\"><b><u> Questions / R&eacute;ponses </u></b></p>
 
-     <p style=\"color: rgba(0,163,231,255);\">1 &ndash; Lesquelles selon vous, sont des r&eacute;alisations d&rsquo;Habitat et Humanisme ? </p>
+     <p style=\"color: rgba(0,163,231,255);\">1 &ndash; Lesquelles selon vous, sont des r&eacute;alisations d&rsquo;Habitat & Humanisme ? </p>
 
      <p style=\"color: rgba(0,163,231,255);\">R&eacute;ponse : <span style=\"color: rgba(236,116,33,255);\">TOUTES</span></p>
 
@@ -109,11 +109,11 @@ if(isset($_POST['code'])) {
 
      <p style=\"color: rgba(0,163,231,255);\">R&eacute;ponse : <span style=\"color: rgba(236,116,33,255);\">TOUS</span> </p>
 
-     <p style=\"color: rgba(0,163,231,255);\">3 - Dans quel arrondissement de Lyon ou commune, Habitat et Humanisme Rh&ocirc;ne propose-t-elle le plus de logements ?</p>
+     <p style=\"color: rgba(0,163,231,255);\">3 - Dans quel arrondissement de Lyon ou commune, Habitat & Humanisme Rh&ocirc;ne propose-t-elle le plus de logements ?</p>
 
      <p style=\"color: rgba(0,163,231,255);\">R&eacute;ponse : <span style=\"color: rgba(236,116,33,255);\"> Centre de Lyon </span></p>
 
-     <p style=\"color: rgba(0,163,231,255);\">4 - Quelles sont les valeurs d&eacute;fendues par Habitat et Humanisme ?</p>
+     <p style=\"color: rgba(0,163,231,255);\">4 - Quelles sont les valeurs d&eacute;fendues par Habitat & Humanisme ?</p>
 
      <p style=\"color: rgba(0,163,231,255);\">R&eacute;ponse : <span style=\"color: rgba(236,116,33,255);\">  B&acirc;tisseur de Lien / interg&eacute;n&eacute;rationnel / accompagnement </span> </p>
      ";

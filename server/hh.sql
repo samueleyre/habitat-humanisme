@@ -48,16 +48,6 @@ INSERT INTO `etablissements` ( `nom`, `code`) VALUES
 ('BBA INSEEC', 'OOO1'),
 ('ETUDIANTS EEM', 'PPP1');
 
--- --------------------------------------------------------
-
---
--- Structure de la table `etabl_etudiants`
---
-
-CREATE TABLE `etabl_etudiants` (
-  `id_etablissement` int(11) NOT NULL,
-  `id_etudiant` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 -- --------------------------------------------------------

@@ -5,7 +5,7 @@ include 'header.php';
 
 if(isset($_POST['schools'])) {
 
-    $schoolsRq = $cnx->query("SELECT nom FROM etablissements");
+    $schoolsRq = $cnx->query("SELECT nom FROM etablissements ORDER by nom");
 
     $schools = array();
     if ($schoolsRq->rowCount() > 0) {

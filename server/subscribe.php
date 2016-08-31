@@ -28,8 +28,7 @@ if(isset($_POST['surname']) && isset($_POST['name']) && isset($_POST['email']) &
 
       if ($rqinsert) {
 
-        // $url_validation = "http://localhost:8000/#/login?code=" . $code_activation;
-        $url_validation = "http://www.samueleyre.com/work/habethu/apptest/#/login?code=" . $code_activation;
+        $url_validation = "http://www.uneclepourlesmalloges.com/#/login?code=" . $code_activation;
 
 
         $m = new PHPMailer;
@@ -63,7 +62,7 @@ if(isset($_POST['surname']) && isset($_POST['name']) && isset($_POST['email']) &
         <p> Vous recevrez un email avec tous les d&eacute;tails de votre mission apr&egrave;s validation ! </p>
         <p> Bon courage !!! </p>
         <p style=\"color: rgba(0,163,231,255);\"> Habitat et Humanisme </p>
-        <img src=\"http://www.samueleyre.com/work/habethu/apptest/images/house.png\">
+        <img src=\"http://www.uneclepourlesmalloges.com/images/house.png\">
         ";
         $m->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

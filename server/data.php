@@ -35,12 +35,10 @@ if(isset($_POST['id']) && isset($_POST['surname']) && isset($_POST['name']) && i
         $message = "vos infos sont bien enregistrés ";
         $success = true;
         $test = ['success' => $success, 'message' => $message];
-        //le bon format pour que je puisse interpreter.
         echo json_encode($test);
     }
 
 
-// mise à jour des résultats de l'étudiant
 
 
 }
